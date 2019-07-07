@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var pedval = parseInt(prompt("ingrese el tamaño del vector"));
+    var cont1=0;
+    var cont2=0;
+    var mese =[pedval];
+    for(x=0;x<pedval;x++){
+        mese[x] = parseInt(prompt("ingrese valor"));
+        if(mese[x]/2==0){
+        cont1=cont1+1;
+        } 
+        if((mese[x]/2!=0)&&(mese[x]!=0)) {
+            cont2=cont2+1;
+        }
+    }
+    document.write("la cantidad de pares es de "+cont1+" la cantidad de inpares es de "+cont2);
+    </script>
+</body>
+</html>
